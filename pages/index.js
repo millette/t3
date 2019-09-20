@@ -1,11 +1,12 @@
+import Link from 'next/link'
 import 'isomorphic-unfetch'
-import MDX from '@mdx-js/runtime'
+import MDX from 'mdx-runtime-slim'
 import { MDXProvider } from '@mdx-js/react'
 
 const FrontPage = ({ MDXContent }) => (
   <MDXProvider>
     <div>
-      <p>Hello Earth</p>
+      <p>Hello <Link href="/p2"><a>Earth</a></Link></p>
       <MDX>{MDXContent}</MDX>
     </div>
   </MDXProvider>
