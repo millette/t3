@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import 'isomorphic-unfetch'
-import MDX from 'mdx-runtime-slim'
+import MDX from '@mdx-js/runtime'
 import { MDXProvider } from '@mdx-js/react'
 
 const FrontPage = ({ MDXContent }) => (
